@@ -1,0 +1,41 @@
+{
+	"compilerOptions": {
+		"incremental": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"allowJs": true,
+		"target": "es2022",
+		"outDir": ".build",
+		"moduleResolution": "NodeNext",
+		"module": "commonjs",
+		"resolveJsonModule": true,
+		"strict": true,
+		"noUncheckedIndexAccess": true,
+		"allowImportingTsExtensions": true,
+		"lib": [
+			"es2022"
+		],
+		"rootDir": "./",
+		"baseUrl": ".",
+		"paths": {
+			"@src/*": [
+				"src/*"
+			]
+		}
+	},
+	"include": [
+		"src/**/*",
+		"**/*.ts",
+		"environtment.d.ts"
+	],
+	"exclude": [
+		"node_modules",
+		"dist",
+		"build",
+		".build",
+		".webpack",
+		"deprecate"
+	]
+}
